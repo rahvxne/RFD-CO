@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: yellow;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    
+    position: fixed;
+    z-index: 999;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#nav-part1{
+    
+    height: 80px;
+    overflow: hidden;
+}
+#nav-part1 svg{
+    
+    display: block;
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#links{
+    padding: 10px;
+}
+#icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+#nav-part2 #links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 30px;
+}
+#nav-part2 #icons i{
+    color: black;
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 100;
+}
+#cursor{
+    z-index: 1;
+     height: 150px;
+     width: 150px;
+    background-color: rgba(255, 166, 0, 0.438);
+    border-radius: 50%;
+     position: fixed;
+   transform: translate(-50%,-50%) scale(0);
+}
+#cursor1{
+    z-index: 1;
+     height: 150px;
+     width: 150px;
+    background-color: rgba(156, 149, 45, 0.404);
+    border-radius: 50%;
+     position: fixed;
+   transform: translate(-50%,-50%) scale(0);
+}
+
+#page1{
+     min-height: 100vh;
+     position: relative;
+     width: 100%;
+     padding: 0 3vw;
+     padding-top: 25vh; 
+     background-color: yellow;
+}
+
+#page1 h1{
+    font-size: 14.4vw;
+    text-transform: uppercase;
+    font-family: futura ;
+    line-height: 12vw;
+    letter-spacing: -6px;
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    height: 100vh;
+    background-color: grey;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 3vw 2vw;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: futura;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 3.1vw;
+    background-color: yellow;
+}
+#page2 .elem{
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+#page2 .elem .dets{
+    height: 60px;
+    width: 80%;
+    border-radius: 60px;
+    position:absolute;
+    z-index: 9; 
+    overflow: hidden;
+    background-color: rgb(255, 238, 0);
+    transition: 0.3s ease;
+  
+}
+
+#page2 .elem .dets:hover{
+    height: 300px;
+}
+
+#page2 .shop{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    font-family: futura;
+}
+.shop img {
+    position: relative;
+    bottom: 60px;
+}
+.shop #btn{
+    /* position: relative; */
+    display: flex;
+    /* left: 130px; */
+    justify-content: center;
+    align-items: center;
+}
+.shop i{
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+
+#page2 .shop  img{
+    height: 300px;
+    width: 300px;
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(240, 240, 55);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ #child{
+    height: 54vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#child img{
+    height: 100%;
+}
+#page4{
+   
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+}
+#page4 h3{
+    padding: 20px;
+    font-family: futura;
+}
+#page4 .line{
+    color: black;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+}
+#page4 #heading{
+    position: relative;
+    top: 15%;
+    font-size: 45px;
+    font-family: Gilroy;
+    align-items: center;
+    justify-content: center;
+    text-align: center  ;
+}
+#page4 #heading p{
+    padding-top: 20px;
+    font-size: 25px;
+}
+#heading button{
+    position: relative;
+    top: 50px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 20px 70px;
+    transition: 0.3s ease;
+}
+#heading button a{
+    font-family: gilroy;
+    text-decoration: none;
+    color: black;
+    
+}
+#heading button:hover{
+    background-color: rgb(255, 123, 0);
+}
+#page5{
+    width: 100%;
+    height: 90vh;
+    
+}
+
+.input-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  position: relative;
+  width: 100%;
+  color: black; /* or 100% if you want full width */
+}
+.input-wrapper button{
+    position: relative;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+.input-wrapper button i{
+    height: 30px;
+    width: 30px;
+}
+ .input-wrapper input::placeholder{
+    color: #000000;
+    opacity: 1;
+}
+.input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 70px;
+  padding: 8px 0;
+  font-family: futura;
+  color: #000000;
+}
+
+/* Create the underline */
+.input-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #000000; /* Change to your brand color */
+  transition: width 0.4s ease;
+}
+
+/* Animate on focus */
+.input-wrapper input:focus + .underline,
+.input-wrapper:focus-within::after {
+  width: 100%;
+}
+#contact{
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social ul li{
+    padding: 5px;
+    list-style: none; 
+}
+.social2 ul li{
+    padding: 5px;
+    list-style: none; 
+}
+.social3 ul li{
+    padding: 5px;
+list-style: none; 
+}
+.social a{
+    text-decoration: none;
+    color: black;
+    
+}
+.social2 a{
+    text-decoration: none;
+    color: black;
+    
+}
+.social3 a{
+    text-decoration: none;
+    color: black;
+    
+}
+.copyright-footer{
+    
+    height: 100vh;
+}
+.copyright-footer h1{
+    padding: 30px;
+    color: black;
+    font-size: 15vh;
+    font-family: futura;
+}
+#page5 .line{
+    color: black;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+}
+@media (max-width:600px) {
+   #page1{
+     min-height: 70vh;
+    
+     width: 100%;
+     padding: 0 3vw;
+     padding-top: 35vh; 
+     
+}
+#page1 h1{
+    font-size: 15.9vw;
+    text-transform: uppercase;
+    font-family: futura ;
+    line-height: 13vw;
+    letter-spacing: -2px;
+}
+#video-container{
+    height: 35vh;
+    width: 100%;
+    margin-top: 1vw;
+}
+#video-container #play{
+    padding: 9.2vw 6.5vw;
+    font-size: 4.5vw;
+    top: 80%;
+    left: 50%;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    scale: 1;
+    transform: translate(-50%,-50%);
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw 3.1vw;
+    flex-direction: column;
+    background-color: yellow;
+}
+#page2 .elem{
+    height: 100vh;
+    width: 100%;
+    margin: 3vw;
+    overflow: hidden;
+}
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(240, 240, 55);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ #child{
+    height: 54vh;
+    width: 88vw;
+    position: relative;
+    padding: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#child img{
+    height: 100%;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    
+    position: fixed;
+    z-index: 999;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#nav-part1{
+    
+    height: 79px;
+    overflow: hidden;
+}
+#nav-part1 svg{
+    
+    display: block;
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#links{
+    display: none;
+    padding: 10px;
+}
+#icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+#nav-part2 #links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 30px;
+}
+#nav-part2 #icons i{
+    color: black;
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 100;
+}
+#page4 #heading{
+    position: relative;
+    top: 10%;
+    font-size: 25px;
+    font-family: Gilroy;
+    align-items: center;
+    justify-content: center;
+    text-align: center  ;
+}
+#page4 #heading p{
+   display: none;
+}
+#heading button{
+    position: relative;
+    top: 50px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 20px 70px;
+    transition: 0.3s ease;
+}
+#heading button a{
+    font-family: gilroy;
+    text-decoration: none;
+    color: black;
+    
+}
+#heading button:hover{
+    background-color: rgb(255, 123, 0);
+}
+#page5{
+    width: 100%;
+    height: 20vh;
+    
+}
+.input-wrapper {
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  position: relative;
+  width: 100%;
+  color: black; /* or 100% if you want full width */
+}
+.input-wrapper button{
+    position: relative;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+.input-wrapper button i{
+    height: 30px;
+    width: 30px;
+}
+ .input-wrapper input::placeholder{
+    color: #000000;
+    opacity: 1;
+}
+.input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+  padding: 8px;
+  font-family: futura;
+  color: #000000;
+}
+
+/* Create the underline */
+.input-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #000000; /* Change to your brand color */
+  transition: width 0.4s ease;
+}
+
+/* Animate on focus */
+.input-wrapper input:focus + .underline,
+.input-wrapper:focus-within::after {
+  width: 100%;
+}
+#contact{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social ul li{
+   align-items: center;
+   justify-content: center;
+    list-style: disc; 
+}
+.social a{
+   align-items: center;
+   justify-content: center;
+    list-style: none; 
+    font-size: 40px;
+}
+.social2{
+    display: none;
+}
+.social3{
+    display: none;
+}
+.copyright-footer{
+ height: 60px;
+}
+.copyright-footer h1{
+    padding: 30px;
+    color: black;
+    font-size: 4vh;
+    font-family: futura;
+}
+#page5 .line{
+    color: black;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+}
+}

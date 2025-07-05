@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav">
+     <div id="nav-part1">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 9.470000267028809 100.7300033569336 72.75741577148438" data-asc="0.9052734375" width="100.7300033569336" height="72.75741577148438"><defs/><g><g fill="#000000"><g transform="translate(0, 0)"><path d="M0 45.26L0 9.47L15.87 9.47Q20.65 9.47 23.14 10.44Q25.63 11.40 27.12 13.84Q28.61 16.28 28.61 19.24Q28.61 23.05 26.15 25.66Q23.68 28.27 18.53 28.98Q20.41 29.88 21.39 30.76Q23.46 32.67 25.32 35.52L31.54 45.26L25.59 45.26L20.85 37.82Q18.77 34.59 17.43 32.89Q16.09 31.18 15.03 30.49Q13.96 29.81 12.87 29.54Q12.06 29.37 10.23 29.37L4.74 29.37L4.74 45.26L0 45.26M4.74 25.27L14.92 25.27Q18.16 25.27 20.00 24.60Q21.83 23.93 22.78 22.45Q23.73 20.97 23.73 19.24Q23.73 16.70 21.89 15.06Q20.04 13.43 16.06 13.43L4.74 13.43L4.74 25.27ZM36.28 45.26L36.28 9.47L60.42 9.47L60.42 13.70L41.02 13.70L41.02 24.78L57.81 24.78L57.81 29.00L41.02 29.00L41.02 45.26L36.28 45.26ZM66.58 45.26L66.58 9.47L78.91 9.47Q83.08 9.47 85.28 9.99Q88.35 10.69 90.53 12.55Q93.36 14.94 94.76 18.66Q96.17 22.39 96.17 27.17Q96.17 31.25 95.21 34.40Q94.26 37.55 92.77 39.61Q91.28 41.67 89.51 42.86Q87.74 44.04 85.24 44.65Q82.74 45.26 79.49 45.26L66.58 45.26M71.31 41.04L78.96 41.04Q82.50 41.04 84.51 40.38Q86.52 39.72 87.72 38.53Q89.40 36.84 90.34 34.00Q91.28 31.15 91.28 27.10Q91.28 21.48 89.44 18.47Q87.60 15.45 84.96 14.43Q83.06 13.70 78.83 13.70L71.31 13.70L71.31 41.04Z"/></g><g transform="translate(0, 36.357421875)"><path d="M26.90 32.71L31.64 33.91Q30.15 39.75 26.28 42.81Q22.41 45.87 16.82 45.87Q11.04 45.87 7.41 43.52Q3.78 41.16 1.89 36.69Q0 32.23 0 27.10Q0 21.51 2.14 17.35Q4.27 13.18 8.22 11.02Q12.16 8.86 16.89 8.86Q22.27 8.86 25.93 11.60Q29.59 14.33 31.03 19.29L26.37 20.39Q25.12 16.48 22.75 14.70Q20.39 12.92 16.80 12.92Q12.67 12.92 9.90 14.89Q7.13 16.87 6.01 20.20Q4.88 23.54 4.88 27.08Q4.88 31.64 6.21 35.05Q7.54 38.45 10.35 40.14Q13.16 41.82 16.43 41.82Q20.41 41.82 23.17 39.53Q25.93 37.23 26.90 32.71ZM35.69 27.61Q35.69 21.26 37.00 17.40Q38.31 13.53 40.88 11.43Q43.46 9.33 47.36 9.33Q50.24 9.33 52.42 10.49Q54.59 11.65 56.01 13.83Q57.42 16.02 58.23 19.15Q59.03 22.29 59.03 27.61Q59.03 33.91 57.74 37.78Q56.45 41.65 53.87 43.76Q51.29 45.87 47.36 45.87Q42.19 45.87 39.23 42.16Q35.69 37.70 35.69 27.61M40.21 27.61Q40.21 36.43 42.27 39.34Q44.34 42.26 47.36 42.26Q50.39 42.26 52.45 39.33Q54.52 36.40 54.52 27.61Q54.52 18.77 52.45 15.87Q50.39 12.96 47.31 12.96Q44.29 12.96 42.48 15.53Q40.21 18.80 40.21 27.61ZM71.80 45.87L61.43 8.86L64.97 8.86L75.32 45.87L71.80 45.87ZM77.39 27.61Q77.39 21.26 78.70 17.40Q80.00 13.53 82.58 11.43Q85.16 9.33 89.06 9.33Q91.94 9.33 94.12 10.49Q96.29 11.65 97.71 13.83Q99.12 16.02 99.93 19.15Q100.73 22.29 100.73 27.61Q100.73 33.91 99.44 37.78Q98.14 41.65 95.57 43.76Q92.99 45.87 89.06 45.87Q83.89 45.87 80.93 42.16Q77.39 37.70 77.39 27.61M81.91 27.61Q81.91 36.43 83.97 39.34Q86.04 42.26 89.06 42.26Q92.09 42.26 94.15 39.33Q96.22 36.40 96.22 27.61Q96.22 18.77 94.15 15.87Q92.09 12.96 89.01 12.96Q85.99 12.96 84.18 15.53Q81.91 18.80 81.91 27.61Z"/></g><g transform="translate(0, 72.71484375)"><path d=""/></g></g></g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="77" viewBox="0 0 64 77">
+                    <image xlink:href="data:image/png;base64,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" x="0" y="0" width="64" height="77"/>
+                  </svg>
+     </div>
+        <div id="nav-part2">
+            <div id="links">
+                <a href="">Shop</a>
+            <a href="">about</a>
+            <a href="">donate</a>
+            </div>
+            <div id="icons">
+<i class="ri-menu-3-line"></i>
+<i class="ri-shopping-cart-fill"></i>
+            </div>
+        </div>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor1"></div>
+    <div id="main">
+        <div id="page1">
+            <h1>Change </h1>
+            <h1>The World</h1>
+            <div id="video-container">
+                <div id="play">
+                    PLAY
+                </div>
+<video src="video1.mp4"autoplay loop muted></video>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="elem1" class="elem">
+                <img data-scroll data-scroll-speed="1" src="pexels-filipp-romanovski-297235844-17228897.jpg" alt="">
+                <div data-scroll data-scroll-speed="-1" class="dets">
+                    <div class="shop">
+                        <div id="btn">
+                             <h2>SHOP NOW</h2>
+                        <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img  src="a_pot_of_boiling_pasta_on_a_stove_in_the_middle_of-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="elem2" class="elem">
+                <img data-scroll data-scroll-speed="2" src="pexels-myfoodie-2638026.jpg" alt="">
+                <div data-scroll data-scroll-speed="-1" class="dets">
+                    <div class="shop">
+                        <div id="btn">
+                             <h2>SHOP NOW</h2>
+                        <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img  src="a_pot_of_boiling_pasta_on_a_stove_in_the_middle_of-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="elem3" class="elem">
+                <img data-scroll data-scroll-speed="2" src="pexels-paul-uchechukwu-246994638-16630564.jpg" alt="">
+                <div data-scroll data-scroll-speed="-1" class="dets">
+                    <div class="shop">
+                        <div id="btn">
+                             <h2>SHOP NOW</h2>
+                        <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img  src="a_pot_of_boiling_pasta_on_a_stove_in_the_middle_of-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page4">
+            <h3>Explore</h3>
+            <div class="line"></div>
+            <div id="heading">
+                <h1>Scoop Into Happiness <br> Where Every Bite Feels Like a Celebration!</h1>
+                <p>we blend creamy indulgence with delicious bites to create moments worth savoring. Whether you're cooling off with our handcrafted ice creams or enjoying our flavorful food options, every item is made with love, quality ingredients, and a whole lot of joy.</p>
+                <button ><a href="#">Learn More</a></button>
+            </div>
+        </div>
+        <div id="page3">
+           <div id="child" class="child1">
+<img src="_I'm looking for a vivid.webp" alt="">
+
+           </div>
+           <div id="child" class="child2">
+<img src="7968f7c5-a48f-4ec3-ad73-d1e266574572.webp" alt="">
+
+           </div>
+           <div id="child" class="child3">
+            <img src="a clutter of all yellow tableware with a pair of y.webp" alt="">
+
+           </div>
+           <div id="child" class="child4">
+<img src="platains chip.webp" alt="">
+
+           </div>
+        </div>
+        <div id="page5">
+            <div class="input-wrapper">
+              <input type="email" placeholder="Enter your email" />
+                  <button><i class="ri-arrow-right-line"></i></button> 
+                                </div>
+            <div id="contact">
+                <div class="social">
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Join us</a></li>
+                        <li><a href="https://www.instagram.com/rahvxne" target="_blank" rel="noopener noreferrer"> instagram</a></li>
+                        <li><a href="#">Work </a></li>
+                        <li><a href="#"> careers</a></li>
+                        <li><a href="https://discord.gg/yZhAz4reZv" target="_blank" rel="noopener noreferrer" >Discord</a></li>
+                    </ul>
+                </div>
+                 <div class="social2">
+                    <ul>
+                        <li><a href="#">connect</a></li>
+                        <li><a href="#">linkedin</a></li>
+                        <li><a href="https://github.com/rahvxne" target="_blank" rel="noopener noreferrer"  >github</a></li>
+                        <li><a href="#">linktree</a></li>
+                        <li><a href="#">newsletter</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </div>
+                <div class="social3">
+                    <ul>
+                        <li><a href="#">x</a></li>
+                        <li><a href="#">reddit</a></li>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">freelance</a></li>
+                        <li><a href="#">Buisness</a></li>
+                        <li><a href="rahxvne@gmail.com" target="_blank" rel="noopener noreferrer"  >Mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="copyright-footer">
+                <h1>Copyright@Rahvxne -2025</h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
